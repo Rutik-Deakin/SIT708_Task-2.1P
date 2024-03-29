@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select category"
+        android:id="@+id/category_label"
+        android:textSize="14dp"
+        ></TextView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/category_spinner"
+        android:layout_marginBottom="14dp"
+        android:entries="@array/categories"></Spinner>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source Unit"
+        android:id="@+id/source_unit_label"
+        android:textSize="14dp"
+        ></TextView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/source_unit_spinner"
+        android:entries="@array/length_units"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination Unit"
+        android:id="@+id/destination_unit_label"
+        android:layout_marginTop="16dp"
+        android:textSize="14dp"></TextView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/destination_unit_spinner"
+        android:entries="@array/length_units"></Spinner>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_value"
+        android:layout_marginTop="16dp"
+        android:hint="Enter the value"></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:id="@+id/convert_btn"
+        android:layout_marginBottom="16dp"
+        android:onClick="convertValue"></Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result:"
+        android:textSize="14dp"
+        android:id="@+id/result_unit_label"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resulted value"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:id="@+id/result_value"></TextView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
